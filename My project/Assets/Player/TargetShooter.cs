@@ -11,7 +11,7 @@ public class TargetShooter : MonoBehaviour
     }
     void Update()
     {
-        if (!PauseMenu.GamePaused)
+        if (!PauseMenu.gamePaused)
         {
             if (Stamina.canShooting) Shooting();
         }

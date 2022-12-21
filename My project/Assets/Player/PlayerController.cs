@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if (!PauseMenu.GamePaused)
+        if (!PauseMenu.gamePaused)
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;

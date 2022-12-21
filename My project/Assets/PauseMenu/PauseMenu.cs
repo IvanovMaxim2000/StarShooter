@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GamePaused { get; set; }
+    public static bool gamePaused { get; set; }
     public Timer timer;
-    public GameObject PauseMenuUI;
+    public GameObject pauseMenuUI;
 
     [SerializeField] PlayerController player;
     [SerializeField] Slider sensivitySlider;
@@ -14,34 +14,34 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
-        GamePaused = false;
+        gamePaused = false;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!GamePaused) Break();
+            if (!gamePaused) Break();
             else Continue();
         }
     }
 
     public void Continue()
     {
-        GamePaused = false;
-        PauseMenuUI.SetActive(false);
+        gamePaused = false;
+        pauseMenuUI.SetActive(false);
     }
 
     public void Restart()
     {
-        GamePaused = false;
+        gamePaused = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Break()
     {
-        PauseMenuUI.SetActive(true);
-        GamePaused = true;
+        pauseMenuUI.SetActive(true);
+        gamePaused = true;
     }
     public void GoToMenu()
     {

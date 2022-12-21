@@ -3138,7 +3138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 1732760786}
-  PauseMenuUI: {fileID: 214321508}
+  pauseMenuUI: {fileID: 214321508}
   player: {fileID: 1318277792}
   sensivitySlider: {fileID: 424196922}
 --- !u!1 &1680989756
@@ -3509,7 +3509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e44a515a4c226743a5f468e3db28415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer_label: {fileID: 1732760784}
+  timerLabel: {fileID: 1732760784}
   endMenu: {fileID: 2032505109}
 --- !u!1 &1757155694
 GameObject:

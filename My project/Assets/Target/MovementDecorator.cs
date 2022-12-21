@@ -11,7 +11,7 @@ public class MovementDecorator : TargetDecorator
     public override int ExtraStamina => 3;
     private float _movespeed = 4f;
     private int _deviation;
-    private int _random_deviation;
+    private int _randomDeviation;
 
     private void Update()
     {
@@ -26,9 +26,9 @@ public class MovementDecorator : TargetDecorator
     {
         transform.Translate(_movespeed * Time.deltaTime, 0, 0);
         _deviation++;
-        _random_deviation = Random.Range(350, 100000);
+        _randomDeviation = Random.Range(350, 100000);
 
-        if (_deviation > _random_deviation)
+        if (_deviation > _randomDeviation)
         {
             _movespeed = -_movespeed;
             _deviation = 0;

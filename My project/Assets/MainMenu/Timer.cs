@@ -1,11 +1,10 @@
 using TMPro;
 using UnityEngine;
-using System;
 
 public class Timer : MonoBehaviour
 {
     public float time { get; private set; }
-    public TextMeshProUGUI timer_label;
+    public TextMeshProUGUI timerLabel;
     public GameObject endMenu;
 
     void Start() => time = 30f;
@@ -19,19 +18,19 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            PauseMenu.GamePaused = true;
+            PauseMenu.gamePaused = true;
             endMenu.SetActive(true);
         }
     }
     public void TimeRuns()
     {
-        if (!PauseMenu.GamePaused) time -= Time.deltaTime;
+        if (!PauseMenu.gamePaused) time -= Time.deltaTime;
     }
 
     void ShowTime(float time)
     {
         float minutes = Mathf.FloorToInt(time / 60);
         float seconds = Mathf.FloorToInt(time % 60);
-        timer_label.text = $"{minutes}:{seconds}";
+        timerLabel.text = $"{minutes}:{seconds}";
     }
 }
