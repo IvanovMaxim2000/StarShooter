@@ -675,12 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3784eb4a6747ae44a89d4b12ed084fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameobject:
-  - {fileID: 1268438839}
-  - {fileID: 688346570}
-  - {fileID: 205104193}
-  - {fileID: 414902689}
-  - {fileID: 938875568}
+  gameObject: []
 --- !u!114 &255583851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1899,9 +1894,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetsHit: 0
   targetsMissed: 0
-  accuracy_slider: {fileID: 1680989758}
-  targetshitLabel: {fileID: 1932929890}
-  targetsmissedLabel: {fileID: 1757155696}
+  accuracySlider: {fileID: 1680989758}
+  targetsHitLabel: {fileID: 1932929890}
+  targetsMissedLabel: {fileID: 1757155696}
   accuracyLabel: {fileID: 676707829}
 --- !u!1 &788697321
 GameObject:

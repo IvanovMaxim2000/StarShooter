@@ -7,8 +7,8 @@ public class Stats_value : MonoBehaviour
     public int targetsHit;
     public int targetsMissed;
 
-    [SerializeField] Slider accuracy_slider;
-    [SerializeField] TextMeshProUGUI targetshitLabel, targetsmissedLabel, accuracyLabel;
+    [SerializeField] Slider accuracySlider;
+    [SerializeField] TextMeshProUGUI targetsHitLabel, targetsMissedLabel, accuracyLabel;
     
     private void Update()
     {
@@ -18,10 +18,10 @@ public class Stats_value : MonoBehaviour
     {
         if (targetsHit > 0 || targetsMissed > 0)
         {
-            accuracy_slider.value = targetsHit * 100 / (targetsHit + targetsMissed);
-            accuracyLabel.text = $"Accuracy: {accuracy_slider.value} %";
-            targetshitLabel.text = $"Targets hit: {targetsHit} ";
-            targetsmissedLabel.text = $"Targets missed: {targetsMissed}";
+            accuracySlider.value = targetsHit * 100 / (targetsHit + targetsMissed);
+            accuracyLabel.text = $"Accuracy: {accuracySlider.value} %";
+            targetsHitLabel.text = $"Targets hit: {targetsHit} ";
+            targetsMissedLabel.text = $"Targets missed: {targetsMissed}";
         }
     }
 }

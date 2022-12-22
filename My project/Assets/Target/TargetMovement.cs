@@ -6,7 +6,7 @@ public class TargetMovement : MonoBehaviour
     [SerializeField] ITarget target;
 
     private int _deviation;
-    private int _random_deviation;
+    private int _randomDeviation;
 
     void Update()
     {
@@ -16,9 +16,9 @@ public class TargetMovement : MonoBehaviour
     {
         transform.Translate(movespeed * Time.deltaTime, 0, 0);
         _deviation++;
-        _random_deviation = Random.Range(350, 100000);
+        _randomDeviation = Random.Range(350, 100000);
 
-        if (_deviation > _random_deviation)
+        if (_deviation > _randomDeviation)
         {
             movespeed = -movespeed;
             _deviation = 0;
