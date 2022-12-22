@@ -32,9 +32,4 @@ public class Settings : MonoBehaviour
     {
         Screen.SetResolution(_rsl[func].width, _rsl[func].height, isFullScreen);
     }
-
-    public void SetSensivity(float value)
-    {
-       
-    }
 }
