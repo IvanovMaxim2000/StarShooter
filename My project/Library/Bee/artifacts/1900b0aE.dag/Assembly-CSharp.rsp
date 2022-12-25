@@ -363,7 +363,6 @@
 "Assets/PauseMenu/PauseMenu.cs"
 "Assets/Player/PlayerController.cs"
 "Assets/Player/TargetShooter.cs"
-"Assets/Saving/SaveSystem.cs"
 "Assets/Stamina/Stamina.cs"
 "Assets/Statictics/SetMove.cs"
 "Assets/Statictics/Stats_value.cs"
