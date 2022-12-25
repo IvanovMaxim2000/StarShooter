@@ -1,11 +1,13 @@
 using TMPro;
 using UnityEngine;
+using System;
 
 public class Timer : MonoBehaviour
 {
     public float time { get; private set; }
     public TextMeshProUGUI timerLabel;
     public GameObject endMenu;
+    public static Action timePassed;
 
     void Start() => time = 30f;
     
@@ -20,6 +22,7 @@ public class Timer : MonoBehaviour
         {
             PauseMenu.gamePaused = true;
             endMenu.SetActive(true);
+            timePassed?.Invoke();
         }
     }
     public void TimeRuns()
